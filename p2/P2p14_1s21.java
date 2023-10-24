@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class P2p13_1s21{
+public class P2p14_1s21{
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		int f,c;
@@ -26,15 +26,18 @@ public class P2p13_1s21{
 
         for (ff=0; ff<f; ff++){
 		for (fc=0; fc<c; fc++){
-		MC[ff][fc]=MA[ff][fc]+MB[ff][fc];
+		MC[ff][fc]=MA[ff][fc]-MB[ff][fc];
 	}
 }
         for (ff=0; ff<f; ff++){
         	for (fc=0; fc<c; fc++){
-        		System.out.println("el resultado de la suma de la matriz en su pocicion ["+ff+"]["+fc+"]es " +MC[ff][fc]);
+        		System.out.println("el resultado de la Resta de la matriz en su pocicion ["+ff+"]["+fc+"]es " +MC[ff][fc]);
         	}
         }
     }
 }
+
+
+
 
 
