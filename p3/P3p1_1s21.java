@@ -45,11 +45,6 @@ public class P3p1_1s21{
 			System.out.println("D) Division");
 
 			System.out.println("\nque opcion deseas");
-			char opc;
-			do{
-				System.out.println("presione s para salir:");
-				opc=teclado.next().charAt(0);
-			} while(opc != 'S' && opc != 's');
 			}
 		public static void main(String[] args) {
 			menu();
