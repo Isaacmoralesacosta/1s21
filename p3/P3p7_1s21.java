@@ -1,30 +1,37 @@
 import java.util.Scanner;
+
 public class P3p7_1s21{
-	public stati int alcubo(int i){
-		int ac=1;
-		for (int c=0;c<3;c++){
-			ac*=i;
 
-		}
-		return ac;
+	public static int alcubo(int n){
+		int o=3;
+		for (int a=0;a<n;a++) {
+		double resultado = Math.pow(a+1,o);
+		System.out.println(resultado);
+	    }
+	    return n;
 	}
-	public stati int factorial(int i){
-		int fa=1;
-		for(int f=i;f<0;f--){
-			fa*=f;
 
+	public static int factorial(int n){
+		int fac = 1;
+		for (int i=0;i<n;i++) {
+			fac*= i+1;
+			System.out.println(fac);
 		}
-		return fa;
+		return n;
 	}
+
+
 	public static void main(String[] args) {
-	Scanner teclado = new Scanner(System.in);
-	int acumulador=0;
-	System.out.println("ingresa el valor de n: ");
-	int n=teclado.nextInt();
-	for (int i=0;i<n;i++){
-		acumulador+=(alcubo(i)/factorial(i));
-
-	}
-	System.out.println("el resultado de la sumatoria es: "+acumulador)
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("ingrese el valor de n");
+		int n=teclado.nextInt();
+		double acomulador = 1;
+		int a = alcubo(n);
+		int f = factorial(n);
+		for(int i=0;i<n;i++){
+		    acomulador+=a/f;
+            System.out.println(acomulador);
+	    }
+	     
 	}
 }
